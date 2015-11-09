@@ -2,7 +2,7 @@
 # Configure your paths and filenames
 SOURCEBINPATH=.
 SOURCEBIN=run_once
-$SOURCEWRAPPER=awmconky
+SOURCEWRAPPER=awmconky
 SOURCEDOC=README.md
 DEBFOLDER=awesome-conky-starter
 
