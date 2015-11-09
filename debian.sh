@@ -37,7 +37,8 @@ mv debian/rules.new debian/rules
 # debian/install must contain the list of scripts to install 
 # as well as the target directory
 echo usr/bin/$SOURCEBIN usr/bin > debian/install 
-echo etc/xdg/awesome/rc.lua etc/xdg/awesome >> debian/install
+echo etc/conkyrc etc/conkyrc >> debian/install 
+echo etc/xdg/awesome/rc.lua.conky.example etc/xdg/awesome >> debian/install
 echo etc/xdg/awesome/debian/menu.lua etc/xdg/awesome/debian/ >> debian/install
 echo usr/share/doc/$DEBFOLDER/$SOURCEDOC usr/share/doc/$DEBFOLDER >> debian/install
 
@@ -49,7 +50,7 @@ Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 Homepage: https://www.github.com/awesome-conky-starter
 #Vcs-Git: git@github.com:cmotc/awesome-conky-starter
-#Vcs-Browser: https://www.github.com/cmotc/svirvneblin-panel
+#Vcs-Browser: https://www.github.com/cmotc/awesome-conky-starter
 
 Package: $DEBFOLDER
 Architecture: all
