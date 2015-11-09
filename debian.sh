@@ -2,7 +2,6 @@
 # Configure your paths and filenames
 SOURCEBINPATH=.
 SOURCEBIN=run_once
-SOURCEWRAPPER=awmconky
 SOURCEDOC=README.md
 DEBFOLDER=awesome-conky-starter
 
@@ -38,7 +37,6 @@ mv debian/rules.new debian/rules
 # debian/install must contain the list of scripts to install 
 # as well as the target directory
 echo usr/bin/$SOURCEBIN usr/bin > debian/install 
-echo usr/bin/$SOURCEWRAPPER usr/bin >> debian/install
 echo etc/xdg/awesome/rc.lua etc/xdg/awesome >> debian/install
 echo etc/xdg/awesome/debian/menu.lua etc/xdg/awesome/debian/ >> debian/install
 echo usr/share/doc/$DEBFOLDER/$SOURCEDOC usr/share/doc/$DEBFOLDER >> debian/install
