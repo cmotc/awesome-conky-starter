@@ -37,9 +37,7 @@ mv debian/rules.new debian/rules
 # debian/install must contain the list of scripts to install 
 # as well as the target directory
 echo usr/bin/$SOURCEBIN usr/bin > debian/install 
-echo etc/conkyrc etc/conkyrc >> debian/install 
 echo etc/xdg/awesome/rc.lua.conky.example etc/xdg/awesome >> debian/install
-echo etc/xdg/awesome/debian/menu.lua etc/xdg/awesome/debian/ >> debian/install
 echo usr/share/doc/$DEBFOLDER/$SOURCEDOC usr/share/doc/$DEBFOLDER >> debian/install
 
 echo "Source: $DEBFOLDER
