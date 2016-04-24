@@ -7,7 +7,7 @@ DEBFOLDER=awesome-conky-starter
 
 DEBVERSION=$(date +%Y%m%d)
 
-cd $DEBFOLDER
+cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 git pull origin master
 
